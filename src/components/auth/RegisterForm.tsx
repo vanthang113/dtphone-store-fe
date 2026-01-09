@@ -109,28 +109,33 @@ export default function RegisterForm() {
 
     return (
         <div className="w-full max-w-[800px] mx-auto flex flex-col justify-center items-center gap-2 tablet:gap-4">
-             <Link
-                href="/"
-                className="w-full flex justify-left mb-8 tablet:mb-10">
+             <div className="w-full flex justify-between items-center gap-4 tablet:gap-6 mb-8 tablet:mb-10">
+            <Link href="/" className="flex-shrink-0 flex justify-center tablet:justify-start">
                 <Image
-                    src="/images/logo-dtphone-store.png"
+                    src="/images/logo-dt.png"
                     alt="DTPhone"
-                    width={480}
-                    height={160}
-                    className="h-28 tablet:h-36 laptop:h-44 desktop:h-52 w-auto object-contain"
+                    width={300}
+                    height={90}
+                    // ↓ nhỏ lại so với trước
+                    className="h-16 tablet:h-20 laptop:h-24 w-auto object-contain"
                     priority
                 />
             </Link>
-            <h1 className="text-xl tablet:text-3xl laptop:text-4xl text-left tablet:text-primary-500 font-bold color-red-500">
-                Đăng ký trở thành SMEMBER
-            </h1>
-            <Image
-                src="/images/auth/logo_auth.png"
-                alt="Register Ant"
-                width={180}
-                height={180}
-                className="w-[80px] h-[80px] tablet:w-[180px] tablet:h-[180px] object-contain"
-            />
+                <h1 className="text-xl tablet:text-3xl laptop:text-4xl max-w-[530px] font-bold text-red-600 flex-1">
+                   Đăng ký trở thành SMEMBER
+                </h1>
+             </div>
+            {/* Ảnh hero dưới logo - nhỏ ở giữa */}
+                  <div className="w-full flex justify-center mt-2 tablet:mt-4 mb-2 tablet:mb-4">
+                    <Image
+                      src="/images/auth/robo-like.png"
+                      alt="DTPhone mascot"
+                      width={300}
+                      height={120}
+                      className="w-32 tablet:w-40 laptop:w-48 h-auto object-contain"
+                      priority
+                    />
+                  </div>
             <span className="font-regular text-sm tablet:text-lg text-neutral-500">
                 Đăng ký bằng tài khoản mạng xã hội
             </span>
@@ -156,7 +161,7 @@ export default function RegisterForm() {
                 >
                     <Image
                         src="/images/auth/logo_zalo.png"
-                        alt="Google"
+                        alt="Zalo"
                         width={25}
                         height={24}
                         className="w-[20px] h-[20px] tablet:w-[25px] tablet:h-[24px] object-contain"

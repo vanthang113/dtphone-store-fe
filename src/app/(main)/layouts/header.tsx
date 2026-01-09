@@ -58,9 +58,9 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0 mr-2">
           <Image
-            src="/images/cellphoneS_logo.png"
+            src="/images/logo-dtphone-store.png"
             alt="Logo CellphoneS"
-            width={160}
+            width={180}
             height={50}
             priority
           />
